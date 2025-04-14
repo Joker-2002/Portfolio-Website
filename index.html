@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Debasish Kumar - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta name="description" content="Personal portfolio of Debasish Kumar, Web Developer and AI/ML Enthusiast">
+</head>
+<body class="light">
+  <div class="container">
+    <div class="theme-toggle-container">
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+        <svg id="moonIcon" xmlns="http://www.w3.org/2000/svg" class="theme-icon" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+        </svg>
+        <svg id="sunIcon" xmlns="http://www.w3.org/2000/svg" class="theme-icon hidden" viewBox="0 0 20 20" fill="currentColor">
+          <path fillRule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clipRule="evenodd" />
+        </svg>
+      </button>
+    </div>
+
+    <header id="header">
+      <div class="header-content">
+        <h1>Debasish Kumar</h1>
+        <div class="typing-container">
+          <span id="role" class="role">Web Developer</span><span class="typing-cursor">|</span>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="about" class="section">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="profile-image">
+            <img src="photo white bg.png" alt="profile image">
+          </div>
+          <div class="about-text">
+            <p>Hello! I'm Debasish, a dedicated and tech-savvy individual with a Bachelor of Computer Applications (BCA) from Cotton University and currently pursuing a Master of Computer Applications (MCA) at Assam Don Bosco University. Passionate about cutting-edge technologies, with a keen interest in Machine Learning and Artificial Intelligence.</p>
+            <p>When I'm not coding, you can find me hiking local trails, experimenting with new cooking recipes, or reading about the latest web technologies.</p>
+            <p>I believe in clean code, continuous learning, and building solutions that make a positive impact.</p>
+            <a href="Debasish CV.pdf" download class="btn-primary download-cv">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="download-icon">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              Download CV
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-container">
+          <div class="skill-card">
+            <h3>Web Technologies</h3>
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>Responsive Design</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <h3>Programming Languages</h3>
+            <ul>
+              <li>Python</li>
+              <li>C/C++</li>
+              <li>Java</li>
+              <li>SQL</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <h3>Tools</h3>
+            <ul>
+              <li>Power BI</li>
+              <li>Git / GitHub</li>
+              <li>VS Code</li>
+              <li>Chrome DevTools</li>
+              <li>Docker</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <h3>Data Science</h3>
+            <ul>
+              <li>Pandas</li>
+              <li>Numpy</li>
+              <li>Matplotlib</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <h2 class="section-title">Projects</h2>
+        <div id="projects-container" class="projects-container">
+          <!-- Projects will be dynamically loaded here -->
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-container">
+          <form id="contact-form" class="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" class="form-input" placeholder="Your name">
+              <span class="error-message" id="name-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" class="form-input" placeholder="Your email">
+              <span class="error-message" id="email-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" class="form-textarea" rows="5" placeholder="Your message"></textarea>
+              <span class="error-message" id="message-error"></span>
+            </div>
+            <button type="submit" class="btn-primary">Send Message</button>
+            <div id="form-status" class="form-status hidden">
+              <p id="status-message"></p>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="current-year"></span> Debasish Kumar. All rights reserved.</p>
+      <p>Last updated: <span id="current-date"></span></p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
